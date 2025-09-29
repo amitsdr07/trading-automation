@@ -1,0 +1,23 @@
+name: Daily Markets Email
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # 03:00 UTC = 08:30 IST daily
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_FROM: "Daily-insights <daily-insights@techskillmentor.com>"
+          EMAIL_TO: "amitsdr07@gmail.com,sinhanitin8@gmail.com "
+          TZ_REGION: "Asia/Kolkata"
+        run: python send_daily.py
