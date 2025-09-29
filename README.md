@@ -1,54 +1,23 @@
-# 🤖 Trading Automation
+# Daily Markets Email via GitHub Actions + Resend
 
-An open-source project for building an **automated trading system** that connects to broker APIs, executes strategies, analyzes market data, and manages risk with minimal human intervention.
+This project:
+- Runs daily on schedule (08:30 IST = 03:00 UTC)
+- Calls OpenAI to generate:
+  1. India & Global stock market news
+  2. GIFT Nifty sentiment
+  3. Nifty 50 stocks down ≥20% this month
+- Sends **one email** with all 3 sections included via Resend
 
----
+## Setup
 
-## ✨ Features
-- 📊 **Market Data** – Connect to live price feeds & store historical data  
-- 📈 **Strategy Engine** – Define, backtest, and run trading strategies  
-- 🤖 **Automated Execution** – Place trades automatically via broker APIs  
-- 🛡️ **Risk Management** – Stop-loss, take-profit, and position sizing  
-- 📑 **Logging & Reporting** – Track trades and performance in real time  
-- 🔔 **Notifications** – Alerts for trades, errors, and price thresholds  
-- 📰 **Daily Market Insights** – Fetch the latest stock market news, top gainers & losers, and highlight potential investment opportunities  
+1. Create a free [Resend](https://resend.com) account, verify a sender domain/email.
+2. In GitHub repo → Settings → Secrets → Actions:
+   - `OPENAI_API_KEY` = your OpenAI key
+   - `RESEND_API_KEY` = your Resend key
+3. Update `EMAIL_FROM` in `.github/workflows/daily.yml` with your verified sender.
+4. Update `EMAIL_TO` with recipient list.
 
----
+## Run
 
-## 📰 News
-- **[2025-09-29]** 🚀 Project initialized — repo structure & first draft of roadmap added  
-- **[Upcoming]** Market Data integration with a public API (Alpha Vantage / Yahoo Finance)  
-- **[Upcoming]** Daily Market Insights module:  
-  - Latest stock market news  
-  - Top gainers & losers  
-  - Investment opportunities  
-
----
-
-## 🎯 Goals
-- Provide a **modular framework** for trading automation  
-- Support multiple brokers and data providers  
-- Enable both **backtesting** and **live trading**  
-- Deliver **daily market insights** to support decision-making  
-- Make strategies easy to **add, test, and deploy**  
-
----
-
-## 🚀 Roadmap
-1. ✅ Market Data Integration (live & historical)  
-2. ⏳ Backtesting Engine  
-3. ⏳ Strategy Deployment  
-4. ⏳ Risk Management Module  
-5. ⏳ Daily Market Insights (news, gainers/losers, opportunities)  
-6. ⏳ Full Automation with Monitoring & Alerts  
-
----
-
-## 📌 Contributing
-Contributions are welcome! Feel free to open an **Issue** or submit a **Pull Request**.  
-
----
-
-## ⚠️ Disclaimer
-This project is for **educational purposes only**.  
-Use it at your own risk — the maintainers are **not responsible** for any financial losses.
+- Automatically at 08:30 IST daily.
+- Or run manually: Actions tab → "Run workflow".
