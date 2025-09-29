@@ -2,7 +2,7 @@ name: Daily Markets Email
 
 on:
   schedule:
-    - cron: "0 3 * * *"   # 03:00 UTC = 08:30 IST daily
+    - cron: "*/5 * * * *"   # "0 3 * * *" 03:00 UTC = 08:30 IST daily
   workflow_dispatch:
 
 jobs:
