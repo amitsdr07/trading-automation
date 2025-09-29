@@ -1,6 +1,6 @@
 # 🤖 Trading Automation
 
-An open-source project for building an **automated trading system** that connects to broker APIs, executes strategies, and manages risk with minimal human intervention.
+An open-source project for building an **automated trading system** that connects to broker APIs, executes strategies, analyzes market data, and manages risk with minimal human intervention.
 
 ---
 
@@ -11,6 +11,17 @@ An open-source project for building an **automated trading system** that connect
 - 🛡️ **Risk Management** – Stop-loss, take-profit, and position sizing  
 - 📑 **Logging & Reporting** – Track trades and performance in real time  
 - 🔔 **Notifications** – Alerts for trades, errors, and price thresholds  
+- 📰 **Daily Market Insights** – Fetch the latest stock market news, top gainers & losers, and highlight potential investment opportunities  
+
+---
+
+## 📰 News
+- **[2025-09-29]** 🚀 Project initialized — repo structure & first draft of roadmap added  
+- **[Upcoming]** Market Data integration with a public API (Alpha Vantage / Yahoo Finance)  
+- **[Upcoming]** Daily Market Insights module:  
+  - Latest stock market news  
+  - Top gainers & losers  
+  - Investment opportunities  
 
 ---
 
@@ -18,6 +29,7 @@ An open-source project for building an **automated trading system** that connect
 - Provide a **modular framework** for trading automation  
 - Support multiple brokers and data providers  
 - Enable both **backtesting** and **live trading**  
+- Deliver **daily market insights** to support decision-making  
 - Make strategies easy to **add, test, and deploy**  
 
 ---
@@ -27,7 +39,8 @@ An open-source project for building an **automated trading system** that connect
 2. ⏳ Backtesting Engine  
 3. ⏳ Strategy Deployment  
 4. ⏳ Risk Management Module  
-5. ⏳ Full Automation with Monitoring & Alerts  
+5. ⏳ Daily Market Insights (news, gainers/losers, opportunities)  
+6. ⏳ Full Automation with Monitoring & Alerts  
 
 ---
 
