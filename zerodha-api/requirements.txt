@@ -1,0 +1,5 @@
+kiteconnect==4.2.0
+websocket-client
+pandas
+pytz
+python-dotenv
