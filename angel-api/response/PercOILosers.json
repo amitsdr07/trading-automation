@@ -1,0 +1,78 @@
+{
+    "status": true,
+    "message": "SUCCESS",
+    "errorcode": "",
+    "data": [
+      {
+        "tradingSymbol": "VOLTAS24APR25FUT",
+        "percentChange": -1.77,
+        "symbolToken": 73686,
+        "opnInterest": 11358900,
+        "netChangeOpnInterest": -204600.0
+      },
+      {
+        "tradingSymbol": "NHPC24APR25FUT",
+        "percentChange": -2.03,
+        "symbolToken": 73507,
+        "opnInterest": 72396800,
+        "netChangeOpnInterest": -1497600.0
+      },
+      {
+        "tradingSymbol": "DLF24APR25FUT",
+        "percentChange": -2.12,
+        "symbolToken": 73304,
+        "opnInterest": 36324750,
+        "netChangeOpnInterest": -787875.0
+      },
+      {
+        "tradingSymbol": "ADANIPORTS24APR25FUT",
+        "percentChange": -2.5,
+        "symbolToken": 54835,
+        "opnInterest": 22534000,
+        "netChangeOpnInterest": -578400.0
+      },
+      {
+        "tradingSymbol": "RECLTD24APR25FUT",
+        "percentChange": -3.6,
+        "symbolToken": 73536,
+        "opnInterest": 57958000,
+        "netChangeOpnInterest": -2163000.0
+      },
+      {
+        "tradingSymbol": "SHREECEM24APR25FUT",
+        "percentChange": -4.12,
+        "symbolToken": 73565,
+        "opnInterest": 241450,
+        "netChangeOpnInterest": -10375.0
+      },
+      {
+        "tradingSymbol": "BANKBARODA24APR25FUT",
+        "percentChange": -4.29,
+        "symbolToken": 69090,
+        "opnInterest": 130457925,
+        "netChangeOpnInterest": -5847075.0
+      },
+      {
+        "tradingSymbol": "ADANIENT24APR25FUT",
+        "percentChange": -5.53,
+        "symbolToken": 54833,
+        "opnInterest": 17313900,
+        "netChangeOpnInterest": -1013400.0
+      },
+      {
+        "tradingSymbol": "TATAPOWER24APR25FUT",
+        "percentChange": -5.7,
+        "symbolToken": 73625,
+        "opnInterest": 65044350,
+        "netChangeOpnInterest": -3932550.0
+      },
+      {
+        "tradingSymbol": "MCX24APR25FUT",
+        "percentChange": -6.99,
+        "symbolToken": 73493,
+        "opnInterest": 2259400,
+        "netChangeOpnInterest": -169800.0
+      }
+    ]
+  }
+  

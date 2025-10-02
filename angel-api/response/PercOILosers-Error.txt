@@ -1,0 +1,4 @@
+Fixes:
+Removed the duplicated "tradingSymbol": "DLF24APR25FUT" entry.
+Removed an extra erroneous "Symbol": entry.
+Ensured proper JSON formatting and structure.

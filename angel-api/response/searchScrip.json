@@ -1,0 +1,67 @@
+{
+    "status": true,
+    "message": "SUCCESS",
+    "errorcode": "",
+    "data": [
+        {
+            "exchange": "NSE",
+            "tradingsymbol": "SBIN-AF",
+            "symboltoken": "11128"
+        },
+        {
+            "exchange": "NSE",
+            "tradingsymbol": "SBIN-BE",
+            "symboltoken": "4884"
+        },
+        {
+            "exchange": "NSE",
+            "tradingsymbol": "SBIN-BL",
+            "symboltoken": "12740"
+        },
+        {
+            "exchange": "NSE",
+            "tradingsymbol": "SBIN-EQ",
+            "symboltoken": "3045"
+        },
+        {
+            "exchange": "NSE",
+            "tradingsymbol": "SBIN-IQ",
+            "symboltoken": "28450"
+        },
+        {
+            "exchange": "NSE",
+            "tradingsymbol": "SBIN-RL",
+            "symboltoken": "16382"
+        },
+        {
+            "exchange": "NSE",
+            "tradingsymbol": "SBIN-U3",
+            "symboltoken": "22351"
+        },
+        {
+            "exchange": "NSE",
+            "tradingsymbol": "SBIN-U4",
+            "symboltoken": "22353"
+        },
+        {
+            "exchange": "NSE",
+            "tradingsymbol": "SBINEQINAV-EQ",
+            "symboltoken": "24527"
+        },
+        {
+            "exchange": "NSE",
+            "tradingsymbol": "SBINEQWETF-BL",
+            "symboltoken": "24526"
+        },
+        {
+            "exchange": "NSE",
+            "tradingsymbol": "SBINEQWETF-EQ",
+            "symboltoken": "24524"
+        },
+        {
+            "exchange": "NSE",
+            "tradingsymbol": "SBINEQWETF-RL",
+            "symboltoken": "24525"
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "status": true,
+    "message": "SUCCESS",
+    "errorcode": "",
+    "data": [
+        {
+            "tradingSymbol": "PNBHOUSING24APR25FUT",
+            "percentChange": 22.08,
+            "symbolToken": 57089,
+            "opnInterest": 1027650,
+            "netChangeOpnInterest": 185900.0
+        },
+        {
+            "tradingSymbol": "KALYANKJIL24APR25FUT",
+            "percentChange": 15.07,
+            "symbolToken": 73473,
+            "opnInterest": 14015100,
+            "netChangeOpnInterest": 1835975.0
+        },
+        {
+            "tradingSymbol": "BEL24APR25FUT",
+            "percentChange": 13.04,
+            "symbolToken": 69092,
+            "opnInterest": 90139800,
+            "netChangeOpnInterest": 1.039965E7
+        },
+        {
+            "tradingSymbol": "DABUR24APR25FUT",
+            "percentChange": 7.78,
+            "symbolToken": 73284,
+            "opnInterest": 19138750,
+            "netChangeOpnInterest": 1381250.0
+        },
+        {
+            "tradingSymbol": "M&MFIN24APR25FUT",
+            "percentChange": 7.37,
+            "symbolToken": 73488,
+            "opnInterest": 20686000,
+            "netChangeOpnInterest": 1420000.0
+        },
+        {
+            "tradingSymbol": "INDUSINDBK24APR25FUT",
+            "percentChange": 6.26,
+            "symbolToken": 73432,
+            "opnInterest": 38068000,
+            "netChangeOpnInterest": 2242500.0
+        },
+        {
+            "tradingSymbol": "SRF24APR25FUT",
+            "percentChange": 5.05,
+            "symbolToken": 73573,
+            "opnInterest": 4035750,
+            "netChangeOpnInterest": 193875.0
+        },
+        {
+            "tradingSymbol": "HINDZINC24APR25FUT",
+            "percentChange": 5.04,
+            "symbolToken": 56960,
+            "opnInterest": 1737050,
+            "netChangeOpnInterest": 83300.0
+        },
+        {
+            "tradingSymbol": "KEI24APR25FUT",
+            "percentChange": 4.9,
+            "symbolToken": 73474,
+            "opnInterest": 1690200,
+            "netChangeOpnInterest": 78900.0
+        },
+        {
+            "tradingSymbol": "NESTLEIND24APR25FUT",
+            "percentChange": 4.68,
+            "symbolToken": 73506,
+            "opnInterest": 9269000,
+            "netChangeOpnInterest": 414200.0
+        }
+    ]
+}

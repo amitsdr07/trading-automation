@@ -1,0 +1,10 @@
+{
+    "status": true,
+    "message": "SUCCESS",
+    "errorcode": "",
+    "data": {
+        "script": "SBIN-EQ",
+        "orderid": "250402000297497",
+        "uniqueorderid": "02320ceb-f66e-415e-ac51-9e92f3428aaf"
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "status": true,
+    "message": "SUCCESS",
+    "errorcode": "",
+    "data": [
+        {
+            "tradingSymbol": "NESTLEIND24APR25FUT",
+            "percentChange": -1.07,
+            "symbolToken": 73506,
+            "ltp": 2215.8,
+            "netChange": -24.0
+        },
+        {
+            "tradingSymbol": "HINDALCO24APR25FUT",
+            "percentChange": -1.12,
+            "symbolToken": 73348,
+            "ltp": 660.05,
+            "netChange": -7.5
+        },
+        {
+            "tradingSymbol": "ICICIPRULI24APR25FUT",
+            "percentChange": -1.16,
+            "symbolToken": 73396,
+            "ltp": 564.3,
+            "netChange": -6.65
+        },
+        {
+            "tradingSymbol": "GAIL24APR25FUT",
+            "percentChange": -1.25,
+            "symbolToken": 73323,
+            "ltp": 184.54,
+            "netChange": -2.33
+        },
+        {
+            "tradingSymbol": "ULTRACEMCO24APR25FUT",
+            "percentChange": -1.26,
+            "symbolToken": 73671,
+            "ltp": 11297.3,
+            "netChange": -144.3
+        },
+        {
+            "tradingSymbol": "CROMPTON24APR25FUT",
+            "percentChange": -1.67,
+            "symbolToken": 73281,
+            "ltp": 341.5,
+            "netChange": -5.8
+        },
+        {
+            "tradingSymbol": "ABB24APR25FUT",
+            "percentChange": -1.7,
+            "symbolToken": 54455,
+            "ltp": 5322.05,
+            "netChange": -91.9
+        },
+        {
+            "tradingSymbol": "RBLBANK24APR25FUT",
+            "percentChange": -1.76,
+            "symbolToken": 73535,
+            "ltp": 173.81,
+            "netChange": -3.11
+        },
+        {
+            "tradingSymbol": "M&MFIN24APR25FUT",
+            "percentChange": -1.86,
+            "symbolToken": 73488,
+            "ltp": 272.15,
+            "netChange": -5.15
+        },
+        {
+            "tradingSymbol": "BEL24APR25FUT",
+            "percentChange": -3.97,
+            "symbolToken": 69092,
+            "ltp": 282.05,
+            "netChange": -11.65
+        }
+    ]
+}
