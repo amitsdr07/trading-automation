@@ -1,0 +1,135 @@
+(.venv) PS C:\langgraph_executor> python -m lgtrader.cli       
+2025-10-06 22:23:28,417 INFO ats.cli: ▶ Load Config
+2025-10-06 22:23:28,450 INFO ats.cli: ✓ Load Config [0.02s]: Loaded configuration for EQ; tracking 4 symbols.
+2025-10-06 22:23:28,451 INFO ats.cli: ▶ Collect News
+2025-10-06 22:23:41,268 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 22:23:41,315 INFO ats.cli: ✓ Collect News [12.86s]: ```json
+{
+  "summary": "Indian equities are experiencing a cautious sentiment amid global market volatility, driven by liquidity concerns and regulatory changes. Sector rotations are evident as investors shift focus towards technology and financials, while energy stocks face headwinds.",
+  "details": {
+    "market_mood": "Cautious",
+    "key_risks": [
+      "Global economic slowdown impacting investor sentiment",
+      "Regulatory changes affecting financial and technology sectors",
+      "Liquidity tightening due to rising interest rates"
+    ],
+    "key_opportunities": [
+      "Increased investment in technology and digital transformation",
+      "Potential recovery in financials as interest rates stabilize",
+      "Emerging sectors like renewable energy gaining traction"
+    ],
+    "notable_events": [
+      "Recent announcements from the Reserve Bank of India regarding monetary policy adjustments",
+      "Sector rotation observed with increased inflows into IT and financial stocks",
+      "Global market reactions to geopolitical tensions and economic data releases"
+    ]
+  }
+}
+```
+2025-10-06 22:23:41,315 INFO ats.cli: ▶ Collect Market Ctx
+2025-10-06 22:23:43,145 ERROR yfinance: Failed to get ticker 'RELIANCE.NS' reason: Failed to perform, curl: (60) SSL certificate problem: unable to get local issuer certificate. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-06 22:23:44,240 ERROR yfinance: Failed to get ticker 'TCS.NS' reason: Failed to perform, curl: (60) SSL certificate problem: unable to get local issuer certificate. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-06 22:23:44,890 ERROR yfinance: Failed to get ticker 'INFY.NS' reason: Failed to perform, curl: (60) SSL certificate problem: unable to get local issuer certificate. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-06 22:23:44,905 ERROR yfinance: $INFY.NS: possibly delisted; no timezone found
+2025-10-06 22:23:45,117 ERROR yfinance: Failed to get ticker '^NSEBANK' reason: Failed to perform, curl: (60) SSL certificate problem: unable to get local issuer certificate. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-06 22:23:45,118 ERROR yfinance: $^NSEBANK: possibly delisted; no timezone found
+2025-10-06 22:23:45,321 ERROR yfinance: Failed to get ticker '^NSEI' reason: Failed to perform, curl: (60) SSL certificate problem: unable to get local issuer certificate. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-06 22:23:45,546 ERROR yfinance: $^NSEI: possibly delisted; no price data found  (period=2d)
+2025-10-06 22:23:45,748 ERROR yfinance: Failed to get ticker 'RELIANCE.NS' reason: Failed to perform, curl: (60) SSL certificate problem: unable to get local issuer certificate. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-06 22:23:46,061 ERROR yfinance: $RELIANCE.NS: possibly delisted; no price data found  (period=2d)
+2025-10-06 22:23:46,268 ERROR yfinance: Failed to get ticker 'TCS.NS' reason: Failed to perform, curl: (60) SSL certificate problem: unable to get local issuer certificate. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-06 22:23:46,477 ERROR yfinance: $TCS.NS: possibly delisted; no price data found  (period=2d)
+2025-10-06 22:23:46,685 ERROR yfinance: Failed to get ticker 'INFY.NS' reason: Failed to perform, curl: (60) SSL certificate problem: unable to get local issuer certificate. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-06 22:23:46,885 ERROR yfinance: $INFY.NS: possibly delisted; no price data found  (period=2d)
+2025-10-06 22:23:47,117 ERROR yfinance: Failed to get ticker '^NSEBANK' reason: Failed to perform, curl: (60) SSL certificate problem: unable to get local issuer certificate. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2025-10-06 22:23:47,324 ERROR yfinance: $^NSEBANK: possibly delisted; no price data found  (period=2d)
+2025-10-06 22:23:53,468 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 22:23:53,475 INFO ats.cli: ✓ Collect Market Ctx [12.16s]: ```json
+{
+  "summary": "Indian equities are facing cautious sentiment amid global market volatility, with sector rotations towards technology and financials, while energy stocks struggle.",
+  "details": {
+    "historical_trends": {
+      "market_mood": "Cautious",
+      "key_risks": [
+        "Global economic slowdown impacting investor sentiment",
+        "Regulatory changes affecting financial and technology sectors",
+        "Liquidity tightening due to rising interest rates"
+      ],
+      "key_opportunities": [
+        "Increased investment in technology and digital transformation",
+        "Potential recovery in financials as interest rates stabilize",
+        "Emerging sectors like renewable energy gaining traction"
+      ],
+      "notable_events": [
+        "Recent announcements from the Reserve Bank of India regarding monetary policy adjustments",       
+        "Sector rotation observed with increased inflows into IT and financial stocks",
+        "Global market reactions to geopolitical tensions and economic data releases"
+      ]
+    },
+    "premarket_view": {
+      "symbol": "^NSEI",
+      "error": "no premarket data"
+    },
+    "breadth_snapshot": {
+      "gainers": 0,
+      "losers": 0,
+      "ratio": 0.0,
+      "snapshots": []
+    }
+  }
+}
+```
+2025-10-06 22:23:53,478 INFO ats.cli: ▶ Run Strategy Agents
+2025-10-06 22:24:01,847 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 22:24:20,969 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 22:24:26,588 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 22:24:34,106 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 22:24:44,062 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 22:24:44,076 INFO ats.cli: ✓ Run Strategy Agents [50.60s]: Collected 0 candidate signals from 5 experts.
+2025-10-06 22:24:44,077 INFO ats.cli: ▶ Evaluate Signals
+2025-10-06 22:24:45,769 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 22:24:45,777 INFO ats.cli: ✓ Evaluate Signals [1.70s]: ```json
+{
+  "summary": "No candidate signals available for validation. Market sentiment is cautious with sector rotations towards technology and financials, while energy stocks are under pressure.",
+  "details": {
+    "signals": [],
+    "exclusions": []
+  }
+}
+```
+2025-10-06 22:24:45,778 INFO ats.cli: ▶ Execute Orders
+2025-10-06 22:24:45,779 INFO ats.cli: ✓ Execute Orders [0.00s]: No executable orders for the current session.
+2025-10-06 22:24:45,780 INFO ats.cli: ▶ Send Report
+2025-10-06 22:24:55,011 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-06 22:24:55,020 INFO ats.cli: ✓ Send Report [9.24s]: ```json
+{
+  "summary": "Indian equities are currently navigating a cautious sentiment due to global market volatility, with notable sector rotations towards technology and financials, while energy stocks are underperforming. Key risks include a global economic slowdown and regulatory changes, but opportunities exist in technology investments and potential recovery in financials.",
+  "details": {
+    "sections": [
+      {
+        "title": "Market Overview",
+        "body": "Indian equities are experiencing a cautious sentiment amid global market volatility, driven by liquidity concerns and regulatory changes. Sector rotations are evident as investors shift focus towards technology and financials, while energy stocks face headwinds."
+      },
+      {
+        "title": "Key Risks",
+        "body": "The primary risks affecting the market include: 1) A global economic slowdown impacting investor sentiment, 2) Regulatory changes affecting financial and technology sectors, and 3) Liquidity tightening due to rising interest rates."
+      },
+      {
+        "title": "Key Opportunities",
+        "body": "Despite the risks, there are several opportunities: 1) Increased investment in technology and digital transformation, 2) Potential recovery in financials as interest rates stabilize, and 3) Emerging sectors like renewable energy gaining traction."
+      },
+      {
+        "title": "Notable Events",
+        "body": "Recent notable events include: 1) Announcements from the Reserve Bank of India regarding monetary policy adjustments, 2) Observed sector rotation with increased inflows into IT and financial stocks, and 3) Global market reactions to geopolitical tensions and economic data releases."
+      }
+    ]
+  },
+  "next_steps": [
+    "Monitor global economic indicators for signs of slowdown.",
+    "Stay updated on regulatory changes affecting key sectors.",
+    "Evaluate investment opportunities in technology and financial sectors.",
+    "Consider diversifying into emerging sectors like renewable energy."
+  ]
+}
+```
+2025-10-06 22:24:55,020 INFO ats.cli: Session Summary | symbols=4 signals=0 orders=0 realized=0.00 unrealized=0.00

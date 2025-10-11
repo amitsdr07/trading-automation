@@ -1,0 +1,121 @@
+segment: EQ
+capital: 300000
+
+trading_window:
+  start_time_ist: "09:15"
+  end_time_ist: "15:15"
+
+llm:
+  provider: openai
+  model: gpt-4o-mini
+  temperature: 0.15
+  api_key: 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
+
+segments:
+  EQ:
+    watchlist: ["RELIANCE", "TCS", "INFY", "HDFCBANK"]
+    capital_cap: 200000
+    max_daily_loss: 5000
+    max_trades_per_day: 8
+    enabled_strategies: ["technical-indicator-agent", "chart-pattern-agent", "candlestick-agent", "price-action-agent", "news-sentiment-agent"]
+
+news:
+  system_prompt: >
+    Aggregate breaking developments across domestic and global markets, emphasising
+    liquidity, regulatory changes, and sector rotations impacting Indian equities.
+  sources:
+    - name: Moneycontrol Pulse
+      url: "https://example.com/news-feed.json"
+      format: json
+      timeout: 10
+    - name: Economic Times Snapshot
+      url: "https://example.com/economic-times.json"
+      format: json
+      timeout: 10
+
+market_data:
+  watchlist: ["RELIANCE", "TCS", "INFY", "HDFCBANK"]
+  premarket_symbol: "NSE"
+  history_lookback_days: 60
+  use_adjusted: true
+  system_prompt: >
+    Summarise key levels, volatility regimes, and institutional flow hints for the
+    downstream strategy agents.
+
+strategy_agents:
+  prompts:
+    technical: >
+      Combine indicator stacks (EMA crossover, RSI, MACD, ATR) and volatility cues
+      to identify asymmetric setups. Output quantified conviction.
+    chart_patterns: >
+      Scan for classical chart patterns on intraday and daily frames. Highlight
+      breakouts, retests, and invalidation levels.
+    candlestick: >
+      Evaluate candlestick structures such as engulfing, morning/evening star,
+      hammer, shooting star with volume confirmation.
+    price_action: >
+      Focus on liquidity sweeps, supply-demand imbalances, order blocks. Call out
+      entries with clear invalidation.
+    news: >
+      Convert news flow into sentiment scores per symbol; capture regulatory or
+      macro catalysts that can accelerate moves.
+
+evaluator:
+  system_prompt: >
+    Act as the head trader. Validate signals, remove conflicts, and build a book
+    that respects desk level risk limits.
+
+risk:
+  max_daily_loss: 7000
+  max_trades_per_day: 12
+  max_concurrent_positions: 4
+  risk_per_trade_pct: 0.01
+  stop_buffer_pct: 0.015
+  take_profit_multiple: 2.0
+  trailing_stop_pct: 0.3
+  trailing_trigger_pct: 0.5
+  min_qty: 1
+
+broker:
+  broker: paper
+  api_key: ""
+  access_token: ""
+
+instruments:
+  zerodha:
+    RELIANCE: 738561
+    TCS: 2953217
+    INFY: 408065
+    HDFCBANK: 341249
+  angel:
+    RELIANCE: "2885"
+    TCS: "11536"
+    INFY: "1594"
+    HDFCBANK: "1330"
+
+execution:
+  system_prompt: >
+    Perform pre-trade checks (liquidity, slippage) and confirm broker routing before
+    handing orders to the OMS.
+
+report:
+  email:
+    enable: false
+    smtp_host: "smtp.gmail.com"
+    smtp_port: 587
+    username: ""
+    password: ""
+    from: ""
+    to: []
+    use_tls: true
+  slack:
+    enable: false
+    webhook_url: ""
+
+reporting:
+  system_prompt: >
+    Provide an executive wrap with strategy attribution, risk usage, and next steps.
+
+db:
+  kind: sqlite
+  path: "trader.db"
