@@ -1,0 +1,35 @@
+(.venv) PS C:\zerodha-api> python orb-trading.py
+[CONFIG] Loading C:\zerodha-api\orb-config.yml
+[ENV] Set SMARTAPI_API_KEY
+[ENV] Set SMARTAPI_CLIENT_ID
+[ENV] Set SMARTAPI_PIN
+[ENV] Set SMARTAPI_TOTP_SECRET
+[INFO] Starting ORB strategy for RELIANCE-EQ on NSE via SMARTAPI
+2025-10-10 09:15:00+05:30
+2025-10-10 11:15:00+05:30
+2025-10-10 08:55:00+05:30
+2025-10-10 11:20:00+05:30
+[I 251012 13:53:00 smartConnect:124] in pool
+[I 251012 13:53:03 smartConnect:124] in pool
+[SMARTAPI] BUY 1 NSE:RELIANCE-EQ placed (order_id=10129e64e32cAO)
+Entered BUY at 1384.4000 | stop 1375.1000 | tp 1393.2000000000003
+[SMARTAPI] Cancelled any existing GTT rules for symbol before flattening.
+[SMARTAPI] No open position to close.
+Exit RELIANCE-EQ @ ~1381.7000 due to window_end
+PnL per share: -2.7000
+[LOG] Appended to /var/log/orb_trades.csv
+
+JSON_SUMMARY
+{
+  "symbol": "RELIANCE-EQ",
+  "range_high": 1383.9,
+  "range_low": 1375.1,
+  "range_size": 8.800000000000182,
+  "entered": true,
+  "side": "buy",
+  "entry": 1384.4,
+  "stop": 1375.1,
+  "take_profit": 1393.2000000000003,
+  "window_minutes": 120,
+  "range_minutes": 15
+}

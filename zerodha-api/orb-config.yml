@@ -1,0 +1,29 @@
+env:
+  SMARTAPI_API  _KEY: "oZVqSiOv"
+  SMARTAPI_CLIENT_ID: "A57244855"
+  SMARTAPI_PIN: "4383"
+  SMARTAPI_TOTP_SECRET: "DAJ6LB2FUSACRBHIN2LWDANRIA"
+  KITE_API_KEY: "5mug7ycbxf6di3qr"
+  KITE_API_SECRET: "lic0864yb0f0f0zi6279j9s1xlfahl8l"
+  KITE_REDIRECT_URL: "https://techskillmentor.com/"
+  # Request token is only needed once per day to generate access_token
+  KITE_REQUEST_TOKEN: "vfDd6iVutOkew1Ur398Wrr24g3rRCK6z"
+  KITE_ACCESS_TOKEN: "AP63ruzKBJhbqbDIz0hoklr2hl1yWIE1"
+params:
+  broker: smartapi 
+  symbol: RELIANCE-EQ
+  token: 2885
+  #broker: kite 
+  #symbol: RELIANCE
+  #token: 738561
+  exchange: NSE
+  product: INTRADAY
+  live_ws: true
+  force_close_at_window_end: true
+  market: Asia/Kolkata
+  open: "09:15"
+  range_minutes: 15
+  window_minutes: 120
+  qty: 1
+  tp_multiple: 1.0
+  log_file: "orb_trades.csv"
