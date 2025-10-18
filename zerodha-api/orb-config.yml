@@ -1,0 +1,29 @@
+env:
+  SMARTAPI_API  _KEY: ""
+  SMARTAPI_CLIENT_ID: ""
+  SMARTAPI_PIN: ""
+  SMARTAPI_TOTP_SECRET: ""
+  KITE_API_KEY: ""
+  KITE_API_SECRET: ""
+  KITE_REDIRECT_URL: ""
+  # Request token is only needed once per day to generate access_token
+  KITE_REQUEST_TOKEN: ""
+  KITE_ACCESS_TOKEN: ""
+params:
+  broker: smartapi 
+  symbol: RELIANCE-EQ
+  token: 2885
+  #broker: kite 
+  #symbol: RELIANCE
+  #token: 738561
+  exchange: NSE
+  product: INTRADAY
+  live_ws: true
+  force_close_at_window_end: true
+  market: Asia/Kolkata
+  open: "09:15"
+  range_minutes: 15
+  window_minutes: 120
+  qty: 1
+  tp_multiple: 1.0
+  log_file: "orb_trades.csv"
